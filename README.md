@@ -3,5 +3,5 @@ Chenfeng Xu, Shijia Yang, Bohan Zhai, Bichen Wu, Xiangyu Yue, Wei Zhan, Peter Va
 
 
 <p align="center">
-    <img src="./intro.png"/ width="750">
+    <img src="./intro.png"/ width="900">
 </p>
