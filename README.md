@@ -8,7 +8,7 @@ We discovered that we can use the same neural net model architectures to underst
     <img src="./intro.png"/ width="900">
 </p>
 
-If you find it
+If you find it helpful, please consider cite it as
 ## Citation
 ```
 @misc{xu2021image2point,
