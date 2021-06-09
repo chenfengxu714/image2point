@@ -9,7 +9,7 @@ We discovered that we can use the same neural net model architectures to underst
 </p>
 
 If you find it
-##Citation
+## Citation
 ```
 @misc{xu2021image2point,
       title={Image2Point: 3D Point-Cloud Understanding with Pretrained 2D ConvNets}, 
