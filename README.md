@@ -11,13 +11,11 @@ We discovered that we can use the same neural net model architectures to underst
 If you find it helpful, please consider cite it as
 ## Citation
 ```
-@misc{xu2021image2point,
-      title={Image2Point: 3D Point-Cloud Understanding with Pretrained 2D ConvNets}, 
-      author={Chenfeng Xu and Shijia Yang and Bohan Zhai and Bichen Wu and Xiangyu Yue and Wei Zhan and Peter Vajda and Kurt Keutzer and Masayoshi Tomizuka},
-      year={2021},
-      eprint={2106.04180},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{xu2021image2point,
+  title={Image2Point: 3D Point-Cloud Understanding with Pretrained 2D ConvNets},
+  author={Xu, Chenfeng and Yang, Shijia and Zhai, Bohan and Wu, Bichen and Yue, Xiangyu and Zhan, Wei and Vajda, Peter and Keutzer, Kurt and Tomizuka, Masayoshi},
+  journal={arXiv preprint arXiv:2106.04180},
+  year={2021}
 }
 ```
 
