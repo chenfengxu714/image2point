@@ -5,7 +5,7 @@ Our paper explores the potential of transferring 2D model architectures and weig
 
 
 <p align="center">
-    <img src="./intro.png"/ width="900">
+    <img src="./pic.png"/ width="900">
 </p>
 
 If you find it helpful, please consider cite it as
