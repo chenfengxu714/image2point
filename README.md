@@ -1,7 +1,7 @@
-# Image2Point: 3D Point-Cloud Understanding withPretrained 2D ConvNets
+# Image2Point: 3D Point-Cloud Understanding with 2D Image Pretrained Models
 Chenfeng Xu, Shijia Yang, Bohan Zhai, Bichen Wu, Xiangyu Yue, Wei Zhan, Peter Vajda, Kurt Keutzer, Masayoshi Tomizuka.
 
-We discovered that we can use the same neural net model architectures to understand both images and point-clouds. We can transfer pretrained weights from image models to point-cloud models with minimal effort. Specifically, based on a 2D ConvNet pretrained on an image dataset, we can transfer the image model to a point-cloud model by inflating 2D convolutional filters to 3D then finetuning its input, output, and optionally normalization layers. The transferred model can achieve competitive performance on 3D point-cloud classification, indoor and driving scene segmentation, even beating a wide range of point-cloud models that adopt task-specific architectures and use a variety of tricks. The paper can be found at [Arxiv](https://arxiv.org/abs/2106.04180).
+Our paper explores the potential of transferring 2D model architectures and weights to understand 3D point-clouds, by empirically investigating the feasibility of the transfer, the benefits of the transfer, and shedding light on why the transfer works. We discover that we can indeed use the same architecture and pretrained weights of a neural net model to understand both images and point-clouds. Specifically, we transfer the image-pretrained model to a point-cloud model by copying or inflating the weights. We find that finetuning the transformed image-pretrained models (FIP) with minimal efforts -- only on input, output, and normalization layers -- can achieve competitive performance on 3D point-cloud classification, beating a wide range of point-cloud models that adopt task-specific architectures and use a variety of tricks. When finetuning the whole model, the performance improves even further. Meanwhile, FIP improves data efficiency, reaching up to 10.0 top-1 accuracy percent on few-shot classification. It also speeds up the training of point-cloud models by up to 11.1x for a target accuracy (e.g., 90 % accuracy). Lastly, we provide an explanation of the image to point-cloud transfer from the aspect of neural collapse. The paper can be found at [Arxiv](https://arxiv.org/abs/2106.04180).
 
 
 <p align="center">
@@ -18,5 +18,3 @@ If you find it helpful, please consider cite it as
   year={2021}
 }
 ```
-
-Code is coming soon.
