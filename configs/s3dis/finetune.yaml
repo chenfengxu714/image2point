@@ -1,0 +1,42 @@
+model:
+  name: spvcnn18
+
+dataset:
+  name: s3dis
+  root: /rscratch/data/s3dis/Stanford3dDataset_v1.2_Aligned_Version
+  voxel_size: 0.05
+  num_classes: 14
+
+data:
+  ignore_label: 10
+  input_dim: 6
+  less_frame: 1   #0.1 for 10% data
+  clip_bound: 4
+  color_std: 0.005
+  color_trans_ratio: 0.05
+  few_shot: 1
+
+train:
+  seed: 1588147245
+  fixed_param: None # io, ioms, iomswb, None
+  pretrained: True
+  pretrained_dir: None
+
+criterion:
+  name: cross_entropy
+  ignore_index: 255
+
+optimizer:
+  name: sgd
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 1.0e-4
+  nesterov: True
+
+scheduler:
+  name: polyLR
+  max_iter: 10400 # num_epochs*iteration_per_epoch
+  power: 0.9
+
+num_epochs: 400
+batch_size: 3

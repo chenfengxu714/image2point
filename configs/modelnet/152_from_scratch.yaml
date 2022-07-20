@@ -1,0 +1,36 @@
+model:
+  name: spvcnn152_cls
+
+dataset:
+  name: modelnet
+  root: /rscratch/data/modelnet/modelnet40_ply_hdf5_2048
+  voxel_size: 0.05
+  num_classes: 40
+
+data:
+  num_points: 2048
+  ignore_label: -1
+  input_dim: 3
+  few_shot: none
+
+train:
+  seed: 777
+  trainable_params: all # io, ioms, iobn, all
+  pretrained: False
+
+criterion:
+  name: cross_entropy
+  ignore_index: 255
+
+optimizer:
+  name: sgd
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 1.0e-4
+  nesterov: False
+
+scheduler:
+  name: cosine
+
+num_epochs: 100
+batch_size: 32

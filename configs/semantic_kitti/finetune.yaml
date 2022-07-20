@@ -1,0 +1,38 @@
+model:
+  name: spvcnn18
+
+dataset:
+  name: semantic_kitti
+  root: /rscratch/data/semantickitti/dataset/sequences
+  voxel_size: 0.05
+  num_classes: 19
+  training_size: 19132
+
+data:
+  num_points: 80000
+  ignore_label: 255
+  input_dim: 4
+  few_shot: 5
+
+train:
+  seed: 1588147245
+  fixed_param: None
+  pretrained: True
+  pretrained_dir: None
+
+criterion:
+  name: cross_entropy
+  ignore_index: 255
+
+optimizer:
+  name: sgd
+  lr: 0.24
+  momentum: 0.9
+  weight_decay: 1.0e-4
+  nesterov: true
+
+scheduler:
+  name: cosine_warmup
+
+num_epochs: 15
+batch_size: 2
