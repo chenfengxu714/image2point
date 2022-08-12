@@ -1,0 +1,3 @@
+mpi4py==3.0.3
+torchpack==0.3.0
+h5py
