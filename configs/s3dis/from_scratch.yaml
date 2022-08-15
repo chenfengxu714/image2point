@@ -17,7 +17,7 @@ data:
 
 train:
   seed: 1588147245
-  fixed_param: None
+  trainable_params: all
   pretrained: False
 
 criterion:
