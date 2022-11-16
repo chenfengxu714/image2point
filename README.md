@@ -13,7 +13,7 @@ If you find it helpful, please consider cite it as
 
 ## Citation
 ```
-@@inproceedings{xu2022image2point,
+@inproceedings{xu2022image2point,
   title={Image2Point: 3D Point-Cloud Understanding with 2D Image Pretrained Models},
   author={Xu, Chenfeng and Yang, Shijia and Galanti, Tomer and Wu, Bichen and Yue, Xiangyu and Zhai, Bohan and Zhan, Wei and Vajda, Peter and Keutzer, Kurt and Tomizuka, Masayoshi},
   booktitle={European Conference on Computer Vision},
